@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>4Mart</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  
+  <style>
+    input {
+      color: black !important;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="header__logo">
+            <a href="#">
+              <img src="img/logo.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="header__menu">
+            <ul>
+              <li>
+                <a href="#" id="berandaMenu">Beranda</a>
+              </li>
+              <li>
+                <a href="#" id="blogMenu">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="featured spad" id="beranda">
+    <div class="container"  style="margin-top: -50px !important;">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <h2>Produk yang kami jual </h2>
+            <div id="root"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row featured__filter">
+          <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+            <div class="featured__item">
+              <div class="featured__item__pic set-bg" data-setbg="produk/daging_segar.jpg">
+                <ul class="featured__item__pic__hover">
+                  <li class="tombol_suka"></li>
+                  <li class="tombol_beli"></li>
+                </ul>
+              </div>
+              <div class="featured__item__text">
+                <h6>
+                  <a href="#">Daging Segar - 1kg</a>
+                </h6>
+                <h5>Rp. 30.000</h5>
+                <p>Grade A</p>
+                <br>
+                <h6>Stok: <b style="color: rgb(189, 68, 38)">50</b></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+            <div class="featured__item">
+              <div class="featured__item__pic set-bg" data-setbg="produk/jambubiji.jpg">
+                <ul class="featured__item__pic__hover">
+                  <li class="tombol_suka"></li>
+                  <li class="tombol_beli"></li>
+                </ul>
+              </div>
+              <div class="featured__item__text">
+                <h6>
+                  <a href="#">Jambu Biji - 1kg</a>
+                </h6>
+                <h5>Rp. 20.000</h5>
+                <p>Grade A</p>
+                <br>
+                <h6>Stok: <b style="color: rgb(189, 68, 38)">60</b></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+            <div class="featured__item">
+              <div class="featured__item__pic set-bg" data-setbg="produk/mangga.jpg">
+                <ul class="featured__item__pic__hover">
+                  <li class="tombol_suka"></li>
+                  <li class="tombol_beli"></li>
+                </ul>
+              </div>
+              <div class="featured__item__text">
+                <h6>
+                  <a href="#">Mangga - 1kg</a>
+                </h6>
+                <h5>Rp. 25.000</h5>
+                <p>Grade A</p>
+                <br>
+                <h6>Stok: <b style="color: rgb(189, 68, 38)">60</b></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+            <div class="featured__item">
+              <div class="featured__item__pic set-bg" data-setbg="produk/pisang.jpg">
+                <ul class="featured__item__pic__hover">
+                  <li class="tombol_suka"></li>
+                  <li class="tombol_beli"></li>
+                </ul>
+              </div>
+              <div class="featured__item__text">
+                <h6>
+                  <a href="#">Pisang - 1 ikat</a>
+                </h6>
+                <h5>Rp. 30.000</h5>
+                <p>Grade B</p>
+                <br>
+                <h6>Stok: <b style="color: rgb(189, 68, 38)">50</b></h6>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="from-blog spad" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title from-blog__title">
+            <h2>Blog Kami</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="blog__item">
+              <div class="blog__item__pic">
+                <img src="produk/blog/blog1.png" alt="">
+              </div>
+              <div class="blog__item__text">
+                <ul>
+                  <li>
+                    <i class="fa fa-calendar-o"></i> 2021-09-24 11:50:23</li>
+                </ul>
+                <h5>
+                  <a href="#">Produk Pertanian yang terbuang</a>
+                </h5>
+                <p>Peristiwa pasca panen yang melimpah memberikan angin segar kepada para petani untuk dapat menikmati hasil panen  yang telah ditunggu-tunggu, namun sangat disayangkan jika tidak semua hasil panen yang ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="blog__item">
+              <div class="blog__item__pic">
+                <img src="produk/blog/blog1.png" alt="">
+              </div>
+              <div class="blog__item__text">
+                <ul>
+                  <li>
+                    <i class="fa fa-calendar-o"></i> 2021-09-24 11:50:23</li>
+                </ul>
+                <h5>
+                  <a href="#">Produk Pertanian yang terbuang</a>
+                </h5>
+                <p>Peristiwa pasca panen yang melimpah memberikan angin segar kepada para petani untuk dapat menikmati hasil panen  yang telah ditunggu-tunggu, namun sangat disayangkan jika tidak semua hasil panen yang ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="blog__item">
+              <div class="blog__item__pic">
+                <img src="produk/blog/blog1.png" alt="">
+              </div>
+              <div class="blog__item__text">
+                <ul>
+                  <li>
+                    <i class="fa fa-calendar-o"></i> 2021-09-24 11:50:23</li>
+                </ul>
+                <h5>
+                  <a href="#">Produk Pertanian yang terbuang</a>
+                </h5>
+                <p>Peristiwa pasca panen yang melimpah memberikan angin segar kepada para petani untuk dapat menikmati hasil panen  yang telah ditunggu-tunggu, namun sangat disayangkan jika tidak semua hasil panen yang ...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  
+  <footer class="footer spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="footer__about">
+            <div class="footer__about__logo">
+              <a href="index-2.html">
+                <img src="img/logo.png" alt="" style="height:100px !important;">
+              </a>
+            </div>
+            <ul>
+              <li>Alamat: ITK</li>
+              <li>Telepon: +62 852 5425 7455</li>
+              <li>Email: <span style="color: rgb(30, 87, 209)">kelompok4@desain.web</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+          <div class="footer__widget">
+            <h6>Jalan Pintas</h6>
+            <ul>
+              <li>
+                <a href="#">Tentang Kami</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://wa.me/6282177794201?text=Halo%20logo!">Kontak</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">Kelompok 4</a>
+              </li>
+              <li>
+                <a href="#">Kelompok 5</a>
+              </li>
+              <li>
+                <a href="#">Kelompok 6</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="footer__widget">
+            <div class="footer__widget__social">
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js%2bjquery.nice-select.min.js.pagespeed.jc.08NHUfMhux.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#blog").hide();
+    });
+    $("#blogMenu").click(function(){
+      $("#blog").show();
+      $("#beranda").hide();
+    });
+
+    $("#berandaMenu").click(function(){
+      $("#beranda").show();
+      $("#blog").hide();
+    });
+  </script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="js/tombol-like.js"></script>
+</body>
+
+</html>
