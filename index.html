@@ -143,59 +143,9 @@
           </div>
         </div>
       </div>
-      <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="blog__item">
-              <div class="blog__item__pic">
-                <img src="produk/blog/blog1.png" alt="">
-              </div>
-              <div class="blog__item__text">
-                <ul>
-                  <li>
-                    <i class="fa fa-calendar-o"></i> 2021-09-24 11:50:23</li>
-                </ul>
-                <h5>
-                  <a href="#">Produk Pertanian yang terbuang</a>
-                </h5>
-                <p>Peristiwa pasca panen yang melimpah memberikan angin segar kepada para petani untuk dapat menikmati hasil panen  yang telah ditunggu-tunggu, namun sangat disayangkan jika tidak semua hasil panen yang ...</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="blog__item">
-              <div class="blog__item__pic">
-                <img src="produk/blog/blog1.png" alt="">
-              </div>
-              <div class="blog__item__text">
-                <ul>
-                  <li>
-                    <i class="fa fa-calendar-o"></i> 2021-09-24 11:50:23</li>
-                </ul>
-                <h5>
-                  <a href="#">Produk Pertanian yang terbuang</a>
-                </h5>
-                <p>Peristiwa pasca panen yang melimpah memberikan angin segar kepada para petani untuk dapat menikmati hasil panen  yang telah ditunggu-tunggu, namun sangat disayangkan jika tidak semua hasil panen yang ...</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="blog__item">
-              <div class="blog__item__pic">
-                <img src="produk/blog/blog1.png" alt="">
-              </div>
-              <div class="blog__item__text">
-                <ul>
-                  <li>
-                    <i class="fa fa-calendar-o"></i> 2021-09-24 11:50:23</li>
-                </ul>
-                <h5>
-                  <a href="#">Produk Pertanian yang terbuang</a>
-                </h5>
-                <p>Peristiwa pasca panen yang melimpah memberikan angin segar kepada para petani untuk dapat menikmati hasil panen  yang telah ditunggu-tunggu, namun sangat disayangkan jika tidak semua hasil panen yang ...</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="row" id="dataBlog">
+        
+      </div>
     </div>
   </section>
   
@@ -280,6 +230,25 @@
     $("#berandaMenu").click(function(){
       $("#beranda").show();
       $("#blog").hide();
+    });
+
+    $( document ).ready(function() {
+      const blog = $('#dataBlog');
+      const url = 'dataBlog.json';
+
+      $.getJSON(url, function(listBlog) {
+        const data = listBlog;
+
+        $.each(data.blogs, function(i) {
+          let description = '';
+          if (data.blogs[i].description.length < 200) {
+            description = data.blogs[i].description;
+          } else {
+            description = data.blogs[i].description.substring(0, 200) + '...';
+          }
+          blog.append('<div class="col-lg-4 col-md-4 col-sm-6"><div class="blog__item"><div class="blog__item__pic"><img src="' + data.blogs[i].thumbnail +'" alt=""></div><div class="blog__item__text"><ul><li><i class="fa fa-calendar-o"></i> ' + data.blogs[i].created_at +'</li></ul><h5><a href="#">' + data.blogs[i].title +'</a></h5><p>' + description +'</p></div></div></div>');
+        });
+      });
     });
   </script>
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>

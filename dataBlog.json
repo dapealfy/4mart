@@ -1,0 +1,22 @@
+{
+    "blogs": [
+        {
+            "title": "Produk Pertanian yang terbuang",
+            "description": "Peristiwa pasca panen yang melimpah memberikan angin segar kepada para petani untuk dapat menikmati hasil panen yang telah ditunggu-tunggu, namun sangat disayangkan jika tidak semua hasil panen yang ...",
+            "thumbnail": "file:///Users/daffareri/Documents/desweb4/produk/blog/blog1.png",
+            "created_at": "14 Desember 2021"
+        },
+        {
+            "title": "Kelompok tani balikpapan menghasilkan buah naga melimpah",
+            "description": "Hal ini terdukung dengan adanya pupuk yang luar biasa manjur untuk penanaman buah naga ko lahan kota Balikpapan, dimana buah naga juga sekaligus menjadi buah yang banyak sekli dapat ditemui di kota Balikpapan.",
+            "thumbnail": "https://cdn-2.tstatic.net/tribunnews/foto/bank/images/buah-naga-bau-naga.jpg",
+            "created_at": "14 Desember 2021"
+        },
+        {
+            "title": "Hujan Lebat, Jokowi Kuyup Saat Tinjau Pertanian Cabai di Wonosobo",
+            "description": "Suara.com - Kedatangan Presiden Joko Widodo bersama rombongan di Wonosbo, Jawa Tengah, Selasa (14/12/2021) siang disambut hujan lebat. Kunjungannya kali ini untuk meninjau pertanian cabai. Menggunakan payung berlindung dari guyuran hujan, Jokowi tetap turun ke lahan pertanian untuk melihat proses penanaman cabai oleh petani di Desa Lamuk, Wonosobo. Presiden Jokowi tetap bersikeras ingin merasakan beratnya para petani saat menanam cabai meski tengah hujan deras yang mengguyur dataran tinggi Wonosobo, tepatnya di Desa Lamuk, ujar Agus dalam keterangannya.",
+            "thumbnail": "https://media.suara.com/pictures/653x366/2021/12/14/60470-presiden-joko-widodo.webp",
+            "created_at": "15 Desember 2021"
+        }
+    ]
+}
